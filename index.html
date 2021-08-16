@@ -1,17 +1,310 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>project</title>
-  <link rel="stylesheet" href="css/normalize-mini.css">
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-  
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>project</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-lg">
+          <a class="navbar-brand" href="index.html">
+            <img src="img/logotip.png" alt="logo" width="80" height="60" />
+          </a>
+          <button
+            class="navbar-toggler border-0"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarlink"
+            aria-controls="navbarlink"
+            aria-expanded="false"
+            aria-label="navbar toggle"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarlink">
+            <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-dark"
+                  aria-current="page"
+                  href="#"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Championship</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">News</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
 
+    <main class="mb-5">
+      <h1 class="sr-only">Football match</h1>
+      <section>
+        <div class="container-lg">
+          <h2 class="display-3 text-center p-3 p-lg-5 mb-0">Today's</h2>
+          <div class="row flex-column flex-lg-row p-4 align-items-center">
+            <div class="col-lg-4 mb-4 mb-lg-0 col-sm-8">
+              <div
+                class="
+                  card-body
+                  d-flex
+                  flex-column
+                  align-items-center
+                  shadow-lg
+                  rounded-lg
+                "
+              >
+                <img
+                  class="mb-3"
+                  src="img/bunyotkor.png"
+                  alt="bunyodkor"
+                  width="250"
+                  height="260"
+                />
+                <h4 class="h2 mb-3">Bunyodkor</h4>
+                <dl class="text-info w-100 mb-0">
+                  <div class="d-flex justify-content-between mb-2">
+                    <dt>Wins:</dt>
+                    <dd class="mb-0">27</dd>
+                  </div>
+                  <div class="d-flex justify-content-between mb-2">
+                    <dt>Loses:</dt>
+                    <dd class="mb-0">20</dd>
+                  </div>
+                  <div class="d-flex justify-content-between mb-2">
+                    <dt>Draws:</dt>
+                    <dd class="mb-0">5</dd>
+                  </div>
+                  <div class="d-flex justify-content-between">
+                    <dt>Leaderboard position:</dt>
+                    <dd class="mb-0">1</dd>
+                  </div>
+                </dl>
+              </div>
+            </div>
+            <div class="col-lg-4 mb-4 mb-lg-0 col-sm-8">
+              <div
+                class="
+                  d-flex
+                  flex-column
+                  align-items-center
+                  justify-content-center
+                  h-100
+                "
+              >
+                <button
+                  class="btn btn-success mb-2 w-100"
+                  data-toggle="modal"
+                  data-target="#modalvideo"
+                  type="button"
+                >
+                  Watch video
+                </button>
+                <a class="btn btn-success mb-2 w-100" href="#">Buy tickets</a>
+                <a class="btn btn-success mb-2 w-100" href="#">Buy merch</a>
+                <button
+                  class="btn btn-success w-100"
+                  data-toggle="collapse"
+                  data-target="#info"
+                  role="tab"
+                  aria-controls="info"
+                  aria-selected="false"
+                  type="button"
+                >
+                  More info
+                </button>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-8">
+              <div
+                class="
+                  card-body
+                  d-flex
+                  flex-column
+                  align-items-center
+                  shadow-lg
+                  rounded-lg
+                "
+              >
+                <img
+                  class="mb-3"
+                  src="img/paxtakor.png"
+                  alt="bunyodkor"
+                  width="260"
+                  height="260"
+                />
+                <h4 class="h2 mb-3">Paxtakor</h4>
+                <dl class="text-info w-100 mb-0">
+                  <div class="d-flex justify-content-between mb-2">
+                    <dt>Wins:</dt>
+                    <dd class="mb-0">30</dd>
+                  </div>
+                  <div class="d-flex justify-content-between mb-2">
+                    <dt>Loses:</dt>
 
-  <script src="js/main.js"></script>
-</body>
+                    <dd class="mb-0">13</dd>
+                  </div>
+                  <div class="d-flex justify-content-between mb-2">
+                    <dt>Draws:</dt>
+                    <dd class="mb-0">7</dd>
+                  </div>
+                  <div class="d-flex justify-content-between">
+                    <dt>Leaderboard position:</dt>
+                    <dd class="mb-0">3</dd>
+                  </div>
+                </dl>
+              </div>
+            </div>
+          </div>
+
+          <div class="collapse" id="info">
+            <div class="card border-0 w-100">
+              <ul class="nav nav-tabs">
+                <li class="nav-itam">
+                  <button
+                    class="nav-link active"
+                    data-toggle="tab"
+                    data-target="#team"
+                    type="button"
+                    aria-controls="home"
+                    aria-selected="true"
+                  >
+                    Team
+                  </button>
+                </li>
+                <li class="nav-itam">
+                  <button
+                    class="nav-link"
+                    data-toggle="tab"
+                    data-target="#goals"
+                    type="button"
+                    aria-controls="goals"
+                    aria-selected="false"
+                  >
+                    Top goals
+                  </button>
+                </li>
+              </ul>
+
+              <div class="tab-content">
+                <div class="tab-pane fade show active mt-2" id="team">
+                  <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                      <table class="table mb-4 mb-lg-0">
+                        <thead>
+                          <tr>
+                            <th scope="col">Name</th>
+                            <th scope="col">Age</th>
+                            <th scope="col">Position</th>
+                            <th scope="col">Inployee</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">Sarvar.K</th>
+                            <td>24</td>
+                            <td>Goalkeeper</td>
+                            <td><input type="checkbox" checked disabled /></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Abdulla.A</th>
+                            <td>23</td>
+                            <td>Mildfield</td>
+                            <td><input type="radio" disabled /></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Sukhrob.I</th>
+                            <td>22</td>
+                            <td>Striker</td>
+                            <td><input type="checkbox" disabled /></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+
+                    <div class="col-lg-6">
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">Name</th>
+                            <th scope="col">Age</th>
+                            <th scope="col">Position</th>
+                            <th scope="col">Inployee</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">Azizbek.I</th>
+                            <td>20</td>
+                            <td>Goalkeeper</td>
+                            <td><input type="radio" checked disabled /></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Anzur.I</th>
+                            <td>36</td>
+                            <td>Mildfield</td>
+                            <td><input type="checkbox" checked disabled /></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Sherzod.T</th>
+                            <td>22</td>
+                            <td>Wing-back</td>
+                            <td><input type="radio" disabled /></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" style="height: 500px" id="goals">
+                  <div class="ratio ratio-16x9 w-100 h-100 p-3">
+                    <iframe
+                      class="border-0 w-100 h-100"
+                      src="https://www.youtube.com/embed/Gqmj-UXMweA"
+                      title="YouTube video player"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="modal fade" id="modalvideo" tabindex="-1">
+      <div class="modal-dialog modal-lg h-100">
+        <div class="modal-content ratio ratio-16x9">
+          <iframe
+            class="border-0"
+            height="500"
+            src="https://www.youtube.com/embed/aEU1SaazvzM"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
